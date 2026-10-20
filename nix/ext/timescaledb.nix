@@ -39,7 +39,7 @@ let
         "-DSEND_TELEMETRY_DEFAULT=OFF"
         "-DREGRESS_CHECKS=OFF"
         "-DTAP_CHECKS=OFF"
-        "-DAPACHE_ONLY=1"
+        "-DAPACHE_ONLY=OFF"
       ]
       ++ lib.optionals stdenv.isDarwin [ "-DLINTER=OFF" ];
 
