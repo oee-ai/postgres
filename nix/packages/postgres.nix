@@ -59,10 +59,8 @@
 
       #Where we import and build the orioledb extension, we add on our custom extensions
       # plus the orioledb option
-      #we're not using timescaledb or plv8 in the orioledb-17 version or pg 17 of supabase extensions
-      orioleFilteredExtensions = builtins.filter (
-        x: x != ../ext/timescaledb.nix && x != ../ext/plv8
-      ) ourExtensions;
+      #we're not using plv8 in the orioledb-17 version or pg 17 of supabase extensions
+      orioleFilteredExtensions = builtins.filter (x: x != ../ext/plv8) ourExtensions;
 
       orioledbExtensions = orioleFilteredExtensions ++ [ ../ext/orioledb.nix ];
       dbExtensions17 = orioleFilteredExtensions;

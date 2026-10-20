@@ -149,10 +149,9 @@ RUN sed -i \
     echo "vault.getkey_script= '/usr/lib/postgresql/bin/pgsodium_getkey.sh'" >> /etc/postgresql/postgresql.conf && \
     chown -R postgres:postgres /etc/postgresql-custom
 
-# Remove timescaledb and plv8 references (not in pg17)
-RUN sed -i 's/ timescaledb,//g;' "/etc/postgresql/postgresql.conf" && \
-    sed -i 's/db_user_namespace = off/#db_user_namespace = off/g;' "/etc/postgresql/postgresql.conf" && \
-    sed -i 's/ timescaledb,//g; s/ plv8,//g' "/etc/postgresql-custom/supautils.conf"
+# Remove plv8 references (not in pg17)
+RUN sed -i 's/db_user_namespace = off/#db_user_namespace = off/g;' "/etc/postgresql/postgresql.conf" && \
+    sed -i 's/ plv8,//g' "/etc/postgresql-custom/supautils.conf"
 
 # Include schema migrations
 COPY migrations/db /docker-entrypoint-initdb.d/
