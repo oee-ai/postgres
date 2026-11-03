@@ -116,6 +116,14 @@
       }
     }
   },
+  "0.18.0": {
+    "hash": "sha256-sBezVDNnyqFQwvFm/CkhlY1zm7Ii2NQPeTfoUQu55e0=",
+    "rust": {
+      "1.97.1": {
+        "cargoHash": "sha256-/miOlhZ87fnKT1f+XVaWK4xAzHje8OGVlYl4iU0Sf34="
+      }
+    }
+  },
   "0.19.2": {
     "hash": "sha256-PANc819AhIE9yJ6NFHGJxHJHWZyR2Srmj2cEz3vQmJk=",
     "rust": {
