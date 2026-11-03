@@ -26,6 +26,7 @@
       ourExtensions = [
         ../ext/rum.nix
         ../ext/timescaledb.nix
+        ../ext/timescaledb_toolkit.nix
         ../ext/pgroonga
         ../ext/index_advisor.nix
         ../ext/wal2json.nix

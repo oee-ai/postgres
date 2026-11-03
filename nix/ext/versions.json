@@ -587,6 +587,17 @@
       "hash": "sha256-fQi4Y78yXmebVLDGcJBMD8TgM7WWUlaFUZXoX4wI4dM="
     }
   },
+  "timescaledb_toolkit": {
+    "1.23.0": {
+      "postgresql": [
+        "17"
+      ],
+      "hash": "sha256-we2w2rYGRC9Did9oocgCWbIUxb8a/g0BlCHXQUe1f8I=",
+      "cargoHash": "sha256-R6daWAQssopVps+IqF94dGBcZMC/u1J4eEg6WouAwOo=",
+      "pgrx": "0.18.0",
+      "rust": "1.97.1"
+    }
+  },
   "vector": {
     "0.4.0": {
       "postgresql": [
